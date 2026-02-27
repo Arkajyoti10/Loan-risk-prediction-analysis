@@ -17,8 +17,8 @@ The dataset contains 614 observations and 13 features related to customer loan a
 |ApplicantIncome|Income of the primary applicant|Numerical (int64)|
 |CoapplicantIncome|Income of the co-applicant|Numerical (float64)|
 |LoanAmount|Loan amount in thousands|Numerical (float)|
-Loan_Amount_Term|Term of the loan in months|Numerical (float)|
-Credit_History|Credit history meets guidelines (1.0 = Yes, 0.0 = No)|Numerical/Binary|
+|Loan_Amount_Term|Term of the loan in months|Numerical (float)|
+|Credit_History|Credit history meets guidelines (1.0 = Yes, 0.0 = No)|Numerical|
 |Property_Area|Area of property (Urban/Semiurban/Rural)|Categorical|
 |Loan_Status|Loan approved (Y/N)|Categorical (Binary)|
 
