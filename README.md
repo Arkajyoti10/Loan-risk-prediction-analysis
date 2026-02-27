@@ -7,6 +7,8 @@ The objective of this project is to automate the loan eligibility process in rea
 ## Database Description
 The dataset contains 614 observations and 13 features related to customer loan applications. It includes a mix of categorical and numerical information required for risk assessment.
 |Feature Name|Description|Data Type|
+|Loan_ID|Unique identifier for each application|Unique identifier for each application|
+|Gender|Applicant's gender (Male/Female)|Categorical|
 
 
 
