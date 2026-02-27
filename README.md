@@ -11,13 +11,24 @@ The dataset contains 614 observations and 13 features related to customer loan a
 |Loan_ID|Unique identifier for each application|Unique identifier for each application|
 |Gender|Applicant's gender (Male/Female)|Categorical|
 |Married|Marital status (Married/Single)|Categorical|
+|Dependents|Number of dependents (0, 1, 2, 3+)|Categorical/Ordinal|
+|Education|Applicant's education (Graduate/Not Graduate)|Categorical|
+|Self_Employed|Employment status (Yes/No)|Categorical|
+|ApplicantIncome|Income of the primary applicant|Numerical (int64)|
+|CoapplicantIncome|Income of the co-applicant|Numerical (float64)|
+|LoanAmount|Loan amount in thousands|Numerical (float)|
+Loan_Amount_Term|Term of the loan in months|Numerical (float)|
+Credit_History|Credit history meets guidelines (1.0 = Yes, 0.0 = No)|Numerical/Binary|
+|Property_Area|Area of property (Urban/Semiurban/Rural)|Categorical|
+|Loan_Status|Loan approved (Y/N)|Categorical (Binary)|
 
 
 
 
 ### Technical Stack
 1. Language: Python
-2. Libraries: Pandas (Data Manipulation), Scikit-Learn (Modeling & Evaluation), Matplotlib (Modeling)
+2. Environment: Jupyter notebook
+3. Libraries: Pandas (Data Manipulation), Scikit-Learn (Modeling & Evaluation), Matplotlib (Modeling)
 
 ### Workflow Steps
 Data Cleaning: Identified and handled missing values across multiple features (Gender, Dependents, LoanAmount, etc.) using forward and backward filling techniques to ensure data integrity.
