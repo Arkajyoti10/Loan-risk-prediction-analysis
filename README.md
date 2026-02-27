@@ -7,6 +7,8 @@ The objective of this project is to automate the loan eligibility process in rea
 ## Database Description
 The dataset contains 614 observations and 13 features related to customer loan applications. It includes a mix of categorical and numerical information required for risk assessment.
 
+
+
 ## Technical Stack
 1. Language: Python
 2. Libraries: Pandas (Data Manipulation), Scikit-Learn (Modeling & Evaluation), Matplotlib (Modeling)
