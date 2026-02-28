@@ -69,6 +69,9 @@ For Loan Denied(N):
 For Loan Approved(Y):
 1. Precision: 0.84  
 2. Recall: 0.92 
-3. f1-score: 0.88 
+3. f1-score: 0.88
+
+### Conclusion
+While the Logistic Regression model provided higher overall accuracy and better precision, the Random Forest showed a slight improvement in detecting risky (Denied) applications. However, for this specific dataset, the simpler Logistic Regression model generalizes better and provides a more reliable balance of metrics.
 
 
