@@ -31,15 +31,15 @@ The dataset contains 614 observations and 13 features related to customer loan a
 3. Libraries: Pandas (Data Manipulation), Scikit-Learn (Modeling & Evaluation), Matplotlib (Modeling)
 
 ### Workflow Steps
-Data Cleaning: Identified and handled missing values across multiple features (Gender, Dependents, LoanAmount, etc.) using forward and backward filling techniques to ensure data integrity.
-Class Distribution: Analyzed target imbalance (68% Approved vs 32% Denied).
-Correlation Heatmapping: Identified relationships between Income, Loan Amount, and Credit History.
-Bivariate Analysis: Visualized the high impact of Credit History on loan outcomes.
-Feature Engineering: Performed One-Hot Encoding on categorical variables including Gender, Married, Education, and Property_Area.
-Transformed the target variable Loan_Status into a machine-readable format.
-Modeling: Split the dataset into training and testing sets to build a robust classification model.
-Advanced Ensemble: Implemented a Random Forest Classifier (100 estimators) to capture non-linear relationships.
-Comparative Evaluation: Analyzed both models using Confusion Matrices and Classification Reports to determine the best balance of Precision and Recall.
+1. Data Cleaning: Identified and handled missing values across multiple features (Gender, Dependents, LoanAmount, etc.) using forward and backward filling techniques to ensure data integrity.
+2. Class Distribution: Analyzed target imbalance (68% Approved vs 32% Denied).
+3. Correlation Heatmapping: Identified relationships between Income, Loan Amount, and Credit History.
+4. Bivariate Analysis: Visualized the high impact of Credit History on loan outcomes.
+5. Feature Engineering: Performed One-Hot Encoding on categorical variables including Gender, Married, Education, and Property_Area.
+6. Transformed the target variable Loan_Status into a machine-readable format.
+7. Modeling: Split the dataset into training and testing sets to build a robust classification model.
+8. Advanced Ensemble: Implemented a Random Forest Classifier (100 estimators) to capture non-linear relationships.
+9. Comparative Evaluation: Analyzed both models using Confusion Matrices and Classification Reports to determine the best balance of Precision and Recall.
 
 ### Key insights
 1. Credit History is the strongest predictor: Applicants with a Credit_History of 1.0 (meeting guidelines) had a significantly higher probability of loan approval compared to those with 0.0.
@@ -54,21 +54,21 @@ Random Forest achieved an accuracy of 81.82%. While the overall score was lower,
 ### Classification Report
 #### Logistic Regression
 For Loan Denied(N):
-Precision: 0.88 
-Recall: 0.53
-f1-score: 0.67 
+1. Precision: 0.88 
+2. Recall: 0.53
+3. f1-score: 0.67 
 For Loan Approved(Y):
-Precision: 0.84
-Recall: 0.97 
-f1-score: 0.90 
+1. Precision: 0.84
+2. Recall: 0.97 
+3. f1-score: 0.90 
 #### Random Forest
 For Loan Denied(N):
-Precision: 0.73
-Recall: 0.56 
-f1-score: 0.63 
+1. Precision: 0.73
+2. Recall: 0.56 
+3. f1-score: 0.63 
 For Loan Approved(Y):
-Precision: 0.84  
-Recall: 0.92 
-f1-score: 0.88 
+1. Precision: 0.84  
+2. Recall: 0.92 
+3. f1-score: 0.88 
 
 
