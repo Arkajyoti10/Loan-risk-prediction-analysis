@@ -53,7 +53,7 @@ Random Forest achieved an accuracy of 81.82%. While the overall score was lower,
 
 ### Classification Report
 #### Logistic Regression
-||Precision|Recall|f1-score|
+|Precision|Recall|f1-score|
 |------------|-----------|---------|
 |Loan Denied (N)|0.88|0.53|0.67|
 
