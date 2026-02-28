@@ -32,10 +32,14 @@ The dataset contains 614 observations and 13 features related to customer loan a
 
 ### Workflow Steps
 Data Cleaning: Identified and handled missing values across multiple features (Gender, Dependents, LoanAmount, etc.) using forward and backward filling techniques to ensure data integrity.
+Class Distribution: Analyzed target imbalance (68% Approved vs 32% Denied).
+Correlation Heatmapping: Identified relationships between Income, Loan Amount, and Credit History.
+Bivariate Analysis: Visualized the high impact of Credit History on loan outcomes.
 Feature Engineering: Performed One-Hot Encoding on categorical variables including Gender, Married, Education, and Property_Area.
 Transformed the target variable Loan_Status into a machine-readable format.
 Modeling: Split the dataset into training and testing sets to build a robust classification model.
-Performance Metrics: Evaluated the model using a Confusion Matrix and achieved an Accuracy Score of ~85%.
+Advanced Ensemble: Implemented a Random Forest Classifier (100 estimators) to capture non-linear relationships.
+Comparative Evaluation: Analyzed both models using Confusion Matrices and Classification Reports to determine the best balance of Precision and Recall.
 
 ### Key insights
 1. Credit History is the strongest predictor: Applicants with a Credit_History of 1.0 (meeting guidelines) had a significantly higher probability of loan approval compared to those with 0.0.
@@ -43,6 +47,13 @@ Performance Metrics: Evaluated the model using a Confusion Matrix and achieved a
 3. Education Impact: The majority of applicants (~78%) are Graduates, which correlates with higher loan approval rates in this specific demographic.
 4. Property Trends: Applicants from Semiurban areas were the most frequent in the dataset (233 cases), indicating a high demand for financing in developing residential zones.
 5. Approval Rate: The baseline dataset shows that approximately 68% of loans (422 out of 614) were approved, which provided a balanced foundation for the classification model.
-6. Model Accuracy: The final classification pipeline achieved an accuracy of ~85.06%, indicating high reliability for automated risk filtering.
+6. Model Comparison Performance:
+Logistic Regression achieved an accuracy of 85.06% with an exceptional 97% recall for approved loans, making it ideal for business growth.
+Random Forest achieved an accuracy of 81.82%. While the overall score was lower, it showed a slightly higher recall for "Denied" cases (56%), indicating a better ability to detect subtle risk patterns.
+
+### Classification Report
+#### Logistic Regression
+||Precision|Recall|f1-score|
+|------------|-----------|---------|
 
 
